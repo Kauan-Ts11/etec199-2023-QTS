@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Kauan Gabriel">
+    <link rel="stylesheet" type="text/css" href="assents/css/style.css">
+    <script src="https://kit.fontawesome.com/ee65ffa8a8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assents/js/mascara-cpf.js"></script>
+   
+    <title>03-13</title>
+</head>
+<body>
+    <div class="container">
+        
+
+        <form name="frmcreate" method="GET" action="../controller/UsuarioController.php">
+
+            <h1>Imposto de Renda </h1>
+            
+            <label class="label-input" for="">
+                <i class="far fa-user icon-modify"></i>
+                <input class="input" name="txtNome" id="txtNome" type="text" required placeholder="Name">
+            </label>
+
+            <label class="label-input" for="">
+                <i class="fas fa-id-card icon-modify"></i>
+                <input class="input" name="txtCpf" id="txtCpf" type="text" required placeholder="CPF" maxlength="14" onkeypress='mascaraMutuario(this,cpfCnpj)' onblur='clearTimeout()'>
+            </label>
+
+            <label class="label-input" for="">
+                <i class="fa-sharp fa-solid fa-money-check-dollar icon-modify"></i>
+                <input class="input" name="txtRendimento" id="txtRendimento" type="number" required placeholder="Informe seu Rendimento Anual">
+            </label>
+
+            <center>
+                <input class="btn" type="submit" name="botaozin" value="Calcular">
+            </center>
+
+        </form>
+    </div>
+</body>
+</html>
