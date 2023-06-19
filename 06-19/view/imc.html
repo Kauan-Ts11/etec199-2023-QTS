@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kauan Gabriel & Henry Modesto">
+    <link rel="stylesheet" href="assents/css/style.css">
+    <title>Calculo IMC</title>
+</head>
+<body>
+    
+    <header class="header">
+        
+    </header>
+    
+    
+    <section class="icons-container">
+        
+    </section>
+    
+
+    <section class="book" id="book">
+        
+        <h1 class="heading"> Calculo IMC </h1>    
+        
+        <div class="row">
+            
+            <div class="image">
+                <img src="assents/img/nutri1.png" alt="">
+            </div>
+            
+            <form id="form-I" method="get" action="index.html">
+                <h3>O seu IMC é</h3>
+                <input name="txtNome" id="txtNome" type="text" placeholder="Digite seu nome" class="box" required readonly>
+                <input name="txtAltura" id="txtAltura"placeholder="Digite sua Altura" class="box" required readonly>
+                <input name="txtPeso" id="txtPeso" placeholder="Peso" class="box" required readonly>
+                <input name="txtImc" id="txtImc" placeholder="Imc" class="box" required readonly>
+                <input name="txtCatImc" id="txtCatImc" placeholder="Categoria do IMC" class="box" required readonly>
+                <input type="submit" value="Calcular um novo IMC" class="btn">
+                
+            </form>
+            
+        </div>
+        
+    </section>
+    
+    <script type="module" src="../controller/main.js"></script>
+
+</body>
+</html>
